@@ -1,0 +1,21 @@
+# DISABLE DIRECTORY BROWSING
+Options All -Indexes
+
+# SECURE HTACCESS
+<Files .htaccess>
+ Order allow,deny
+ Deny from all
+</Files>
+<Files robots.txt>
+order allow,deny
+deny from all
+</Files>
+
+AddType text/x-component .htc
+
+Options +FollowSymLinks
+RewriteEngine On 
+
+RewriteBase /console/
+
+RewriteRule ^invoice/(.*)/(.*)$ invoice-pdf.php?invID=$1

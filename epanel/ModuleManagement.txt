@@ -1,0 +1,18 @@
+moduleMaster
+===========
+moduleID int(5)
+moduleTitle varchar(50)
+moduleName varchar(20)
+moduleFile varchar(25)
+moduleParent int(5)
+moduleSeoSlug varchar(25)
+sortorder int(3)
+status char(1) (D -> Lable Install, E -> Lable Uninstall)
+username varchar(30)
+createdate date
+modifieddate date
+remote_ip varchar(15)
+
+============================================
+refere E:\wamp\www\everest\inc\generalfunc.php function importsfiles()
+xml file is E:\wamp\www\spcbl\console\module.xml
